@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: docker-test-prod
+    container_name: docker-test_c-prod
+    ports:
+      - 8081:80
